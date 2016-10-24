@@ -21,9 +21,15 @@ export class MartianRobot {
         this.lost = false;
 
     }
-    
+    getCurrentPosition():string {
+        var pos = this.position.posX + ' ' + this.position.posY + ' ' + this.orientation;
+        if(this.lost){
+            pos += ' LOST';
+        }
+        return pos;
+    }
     showCurrentPosition(){
-        console.log( this.position.posX + ' ' + this.position.posY + ' ' + this.orientation);
+        console.log( this.getCurrentPosition() );
     }
     
     move(instructions: string ){

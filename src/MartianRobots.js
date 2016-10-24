@@ -7,10 +7,16 @@ var MartianRobot = (function () {
         this.world = world;
         this.ignoreInstructions = false;
         this.lost = false;
-        dangerZones.push({ posX: 3, posY: 3 });
     }
+    MartianRobot.prototype.getCurrentPosition = function () {
+        var pos = this.position.posX + ' ' + this.position.posY + ' ' + this.orientation;
+        if (this.lost) {
+            pos += ' LOST';
+        }
+        return pos;
+    };
     MartianRobot.prototype.showCurrentPosition = function () {
-        console.log(this.position.posX + ' ' + this.position.posY + ' ' + this.orientation);
+        console.log(this.getCurrentPosition());
     };
     MartianRobot.prototype.move = function (instructions) {
         var commands = instructions.split("");
