@@ -19,8 +19,7 @@ export class MartianRobot {
         this.world = world;
         this.ignoreInstructions = false;
         this.lost = false;
-        
-        dangerZones.push({posX: 3,posY:3});
+
     }
     
     showCurrentPosition(){
