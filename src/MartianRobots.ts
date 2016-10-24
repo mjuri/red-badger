@@ -38,9 +38,7 @@ export class MartianRobot {
     }
     
     runCommands(commands : string[]){
-        console.log('Orietnacion inicial: ' + this.orientation);
-        console.log('Comando a ejecutar: ' + commands[0]);
-        console.log('Tamanio arrray' + commands.length);
+
         switch(commands[0])
         {
             case 'L':
@@ -113,15 +111,5 @@ export class MartianRobot {
         this.orientation = coordinates[current];
     }
     
-
     
 }
-
-var world = {posX: 5, posY: 3};
-
-var initialPos = { posX: 0, posY: 3};
-
-let robot = new MartianRobot( initialPos, 'W', world );
-robot.move('LLFFFLF');
-
-console.log( robot.showCurrentPosition());

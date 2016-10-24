@@ -23,9 +23,6 @@ var MartianRobot = (function () {
         this.runCommands(commands);
     };
     MartianRobot.prototype.runCommands = function (commands) {
-        console.log('Orietnacion inicial: ' + this.orientation);
-        console.log('Comando a ejecutar: ' + commands[0]);
-        console.log('Tamanio arrray' + commands.length);
         switch (commands[0]) {
             case 'L':
                 this.turnLeft();
@@ -97,8 +94,3 @@ var MartianRobot = (function () {
     return MartianRobot;
 }());
 exports.MartianRobot = MartianRobot;
-var world = { posX: 5, posY: 3 };
-var initialPos = { posX: 0, posY: 3 };
-var robot = new MartianRobot(initialPos, 'W', world);
-robot.move('LLFFFLF');
-console.log(robot.showCurrentPosition());
