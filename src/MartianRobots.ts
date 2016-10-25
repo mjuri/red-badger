@@ -113,7 +113,8 @@ export class MartianRobot {
     
     
 }
-
+// Uncomment this block to run MartianRobots.js
+/* 
 const world = { posX: 5, posY: 3};
 
 var robotA = new MartianRobot({ posX: 1, posY: 1}, 'E', world);
@@ -128,4 +129,5 @@ robotC.move("LLFFFLFLFL");
 robotA.showCurrentPosition(); // 1 1 E
 robotB.showCurrentPosition(); // Print 3 3 N LOST
 robotC.showCurrentPosition(); // Print 2 3 N LOST
+*/
 

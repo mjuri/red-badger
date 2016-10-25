@@ -94,13 +94,19 @@ var MartianRobot = (function () {
     return MartianRobot;
 }());
 exports.MartianRobot = MartianRobot;
-var world = { posX: 5, posY: 3 };
-var robotA = new MartianRobot({ posX: 1, posY: 1 }, 'E', world);
+/*
+const world = { posX: 5, posY: 3};
+
+var robotA = new MartianRobot({ posX: 1, posY: 1}, 'E', world);
 robotA.move("RFRFRFRF");
-var robotB = new MartianRobot({ posX: 3, posY: 2 }, 'N', world);
+
+var robotB = new MartianRobot({ posX: 3, posY: 2}, 'N', world);
 robotB.move("FRRFLLFFRRFLL");
-var robotC = new MartianRobot({ posX: 2, posY: 3 }, 'W', world);
+
+var robotC = new MartianRobot({ posX: 2, posY: 3}, 'W', world);
 robotC.move("LLFFFLFLFL");
+
 robotA.showCurrentPosition(); // 1 1 E
 robotB.showCurrentPosition(); // Print 3 3 N LOST
 robotC.showCurrentPosition(); // Print 2 3 N LOST
+*/
